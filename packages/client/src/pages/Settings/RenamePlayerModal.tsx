@@ -18,7 +18,7 @@ const RenamePlayerModal: React.FC<IRenamePlayerModalProps> = ({
 
   const submit = () => {
     if (name === "") {
-      setSubmitError("Name must not be empty");
+      setSubmitError("El nombre no puede estar vac?o");
     } else {
       setSubmitError(null);
     }
@@ -29,16 +29,16 @@ const RenamePlayerModal: React.FC<IRenamePlayerModalProps> = ({
   return (
     <Modal show={true} onHide={onClose} size="lg" centered>
       <Modal.Header closeButton>
-        <Modal.Title>Change Player Name</Modal.Title>
+        <Modal.Title>Cambiar nombre de Jugador</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <InputGroup>
           <InputGroup.Prepend>
-            <InputGroup.Text>Name</InputGroup.Text>
+            <InputGroup.Text>Nombre</InputGroup.Text>
           </InputGroup.Prepend>
           <FormControl value={name} onChange={(e) => setName(e.currentTarget.value)} />
           <Button variant="success" onClick={submit} className="remove-left-border-radius">
-            Rename
+            Guardar
           </Button>
         </InputGroup>
         <Form.Text style={{ color: "var(--danger)" }}>{submitError}</Form.Text>

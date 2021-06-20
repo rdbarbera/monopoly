@@ -23,7 +23,7 @@ const InitialiseGame: React.FC<IInitialiseGameProps> = ({ players, proposeTransa
 
   return (
     <Button variant="primary" block onClick={showModal}>
-      Initialise Player Balances
+      Carga inicial de balances de Jugadores
     </Button>
   );
 };
@@ -57,18 +57,18 @@ const ValueModal: React.FC<IValueModalProps> = ({ submitAmount, onClose }) => {
   return (
     <Modal show={true} onHide={close} size="lg" centered className="send-money-modal">
       <Modal.Header closeButton>
-        <Modal.Title>Initialise Balances</Modal.Title>
+        <Modal.Title>Balances Iniciales</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <p>
-          Once you give a player money or initialise balances, you can not initialise balances
-          again.
+          Una vez inicializado los balances iniciales, no se puede volver a realizar. De totas maneras
+          puede enviarle dinero a los usuarios cuanto desee uno a uno
         </p>
 
         <MonopolyAmountInput amount={amount} setAmount={setAmount} />
 
         <Button block variant="success" className="mt-1" onClick={submit}>
-          Initialise
+          Inicializar
         </Button>
 
         <Form.Text style={{ color: "var(--danger)" }}>{submitError}</Form.Text>

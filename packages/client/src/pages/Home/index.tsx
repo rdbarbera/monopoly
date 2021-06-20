@@ -27,7 +27,7 @@ const Home: React.FC<IHomeProps> = ({ onGameSetup }) => {
       <img src={bannerImage} className="banner" alt="Monopoly Money Banner" />
 
       <p className="lead mt-2">
-        An easy way to manage finances in your game of monopoly from the browser.
+        Juguemos Monopoly manejando las finanzas digitales.
       </p>
 
       <div className="new-join-button-wrapper mt-4">
@@ -40,7 +40,7 @@ const Home: React.FC<IHomeProps> = ({ onGameSetup }) => {
       </div>
 
       <div className="mt-4">
-        <h2>Your Active Games</h2>
+        <h2>Mis Juegos Activos</h2>
         {storedGames.length > 0 ? (
           <div className="active-game-cards">
             {storedGames
@@ -49,7 +49,7 @@ const Home: React.FC<IHomeProps> = ({ onGameSetup }) => {
                 <Card key={gameId} className="mb-1">
                   <Card.Body className="p-2">
                     <div className="text-left">
-                      Game {gameId}
+                      Juego {gameId}
                       <small style={{ float: "right" }}>
                         {DateTime.fromISO(time).toFormat("DD h:mm a")}
                       </small>
@@ -72,11 +72,11 @@ const Home: React.FC<IHomeProps> = ({ onGameSetup }) => {
                             {player.name}: {formatCurrency(player.balance)}
                           </Badge>
                         ))}
-                      {status !== null && (
+                      {/*status !== null && (
                         <Badge variant="warning">
                           Free Parking: {formatCurrency(status.freeParkingBalance)}
                         </Badge>
-                      )}
+                      )*/}
                     </div>
                     <Button
                       block
@@ -85,7 +85,7 @@ const Home: React.FC<IHomeProps> = ({ onGameSetup }) => {
                       onClick={() => onGameSetup(gameId, userToken, playerId)}
                       className="mt-2"
                     >
-                      Join Game
+                      Unirse
                     </Button>
                   </Card.Body>
                 </Card>
@@ -99,17 +99,19 @@ const Home: React.FC<IHomeProps> = ({ onGameSetup }) => {
       <hr />
 
       <div>
-        <h2>What is Monopoly Money?</h2>
+        <h2>Que es Monopoly Money?</h2>
         <p>
-          Monopoly Money is a webapp that helps you keep track of your finances in a game of
-          Monopoly (or any game that uses currency).
+          Es un webapp que permite manejar el dinero de manera digital por medio de transferencias
+          entre usuario y el banco.
         </p>
         <p>
-          Instead of using the cash that the game commonly comes with, you can play Monopoly like
-          you're playing the credit card edition, but with your phone - a much more faster way to
-          exchange money.
+          En lugar de utilizar el dinero que ya incluye el juego de mesa, puede jugar desde su telefono de manera digital,
+          mucho mas r?pido.
         </p>
-
+        <p>
+          Para jugar, quien vaya a ser el "banco" solo debe hacer clic en "Nuevo Juego", esto generar? un id que es que debe introducir
+          en el boton "Unirse a Juego" los demas juegadores.
+        </p>
         <div
           style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr", gridGap: 6 }}
           className="mt-5"

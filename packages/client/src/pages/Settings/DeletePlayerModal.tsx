@@ -16,14 +16,14 @@ const DeletePlayerModal: React.FC<IDeletePlayerModalProps> = ({
   return (
     <Modal show={true} onHide={onClose} size="lg" centered>
       <Modal.Header closeButton>
-        <Modal.Title>Remove Player</Modal.Title>
+        <Modal.Title>Eliminar Jugador</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <p>Are you sure you want to remove {player.name}?</p>
+        <p>Estas seguro de eliminar a {player.name}?</p>
       </Modal.Body>
       <Modal.Footer>
         <Button variant="danger" onClick={onClose}>
-          Cancel
+          Cancelar
         </Button>
         <Button
           variant="success"
@@ -33,7 +33,7 @@ const DeletePlayerModal: React.FC<IDeletePlayerModalProps> = ({
             onClose();
           }}
         >
-          Remove
+          Eliminar
         </Button>
       </Modal.Footer>
     </Modal>

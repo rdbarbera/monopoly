@@ -11,7 +11,7 @@ interface IJoinProps {
 }
 
 const Join: React.FC<IJoinProps> = ({ newGame, onGameSetup }) => {
-  const title = newGame ? "Create Game" : "Join Game";
+  const title = newGame ? "Nuevo Juego" : "Unirse al Juego";
 
   const { storedGames } = useStoredGames(false);
   const [loading, setLoading] = useState(false);
@@ -31,7 +31,7 @@ const Join: React.FC<IJoinProps> = ({ newGame, onGameSetup }) => {
     } else if (newGame) {
       // Validity check
       if (name === "") {
-        setNameError("Please provide your name");
+        setNameError("Por favor ingresa tu nombre");
         return;
       }
       setNameError(null);
@@ -50,12 +50,12 @@ const Join: React.FC<IJoinProps> = ({ newGame, onGameSetup }) => {
     } else {
       // Validity check
       if (gameId === "") {
-        setGameError("Please provide the game Id");
+        setGameError("Por favor ingresa el ID del juego");
         return;
       }
       setGameError(null);
       if (name === "") {
-        setNameError("Please provide your name");
+        setNameError("Por favor ingresa tu nombre");
         return;
       }
       setNameError(null);
@@ -65,9 +65,9 @@ const Join: React.FC<IJoinProps> = ({ newGame, onGameSetup }) => {
       joinGame(gameId, name)
         .then((result) => {
           if (result === "DoesNotExist") {
-            setGameError("That game does not exist");
+            setGameError("El juego no existe");
           } else if (result === "NotOpen") {
-            setGameError("That game is not open. Ask the banker to open the game.");
+            setGameError("El juego no se encuentra abierto, pidele al usuario 'banco' que lo abra para nuevos usuarios en 'Conf.'.");
           } else {
             onGameSetup(result.gameId, result.userToken, result.playerId);
           }
@@ -103,13 +103,13 @@ const Join: React.FC<IJoinProps> = ({ newGame, onGameSetup }) => {
 
       {isAStoredGame ? (
         <p>
-          <em>You're already in this game - name is not required.</em>
+          <em>Ya te encuentras en el juego, nombre no es necesario.</em>
         </p>
       ) : (
           <Form.Group>
             <Form.Label>Tu nombre</Form.Label>
             <Form.Control
-              placeholder="Name"
+              placeholder="Nombre"
               value={name}
               className="text-center"
               onChange={(e) => setName(e.currentTarget.value)}

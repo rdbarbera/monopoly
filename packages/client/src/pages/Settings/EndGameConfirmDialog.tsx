@@ -13,7 +13,7 @@ const EndGameConfirmDialog: React.FC<IEndGameConfirmDialogProps> = ({
   return (
     <Modal show={true} onHide={onClose} size="lg" centered>
       <Modal.Header closeButton>
-        <Modal.Title>End Game</Modal.Title>
+        <Modal.Title>Finalizar Juego</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <p>Are you sure you want to end the game?</p>
@@ -31,7 +31,7 @@ const EndGameConfirmDialog: React.FC<IEndGameConfirmDialogProps> = ({
             onClose();
           }}
         >
-          End Game
+          Finalizar Juego
         </Button>
       </Modal.Footer>
     </Modal>

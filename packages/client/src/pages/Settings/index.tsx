@@ -93,7 +93,7 @@ const Settings: React.FC<ISettingsProps> = ({
                     showNameChangeModal();
                   }}
                 >
-                  <span role="img" aria-label="Rename">
+                  <span role="img" aria-label="Guardar">
                     ✏️
                   </span>
                 </Button>
@@ -118,11 +118,11 @@ const Settings: React.FC<ISettingsProps> = ({
       </Table>
 
       <Button block variant="primary" onClick={() => proposeGameOpenStateChange(!isGameOpen)}>
-        {isGameOpen ? "Close" : "Open"} Game To New Players
+        {isGameOpen ? "Cerrar" : "Abrir"} Juego a Nuevos Jugadores
       </Button>
 
       <Button block variant="danger" onClick={() => showEndGameConfirmModal()}>
-        End Game
+        Finalizar Juego
       </Button>
     </div>
   );

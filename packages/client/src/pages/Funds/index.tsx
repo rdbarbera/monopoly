@@ -86,12 +86,12 @@ const Funds: React.FC<IFundsProps> = ({
       </div>
 
       <div className="balance-grid">
-        <PlayerCard
+        {/*<PlayerCard
           name={freeParkingName}
           connected={null}
           balance={freeParkingBalance}
           onClick={() => setRecipient("freeParking")}
-        />
+        />*/}
         <PlayerCard
           name={bankName}
           connected={null}
@@ -103,7 +103,7 @@ const Funds: React.FC<IFundsProps> = ({
       <div className="mt-2">
         <RecentTransactions events={events} players={players} />
       </div>
-    </div>
+    </div >
   );
 };
 

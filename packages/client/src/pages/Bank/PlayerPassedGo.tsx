@@ -26,9 +26,9 @@ const PlayerPassedGo: React.FC<IPlayerPassedGoProps> = ({ players, onSubmit }) =
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [storedPassingGoReward, setStoredPassingGoReward] = useLocalStorage<number>(
     passingGoRewardValueLocalStorageKey,
-    20000
+    200
   );
-  const [passingGoReward, setPassingGoReward] = useState<number>(storedPassingGoReward ?? 20000);
+  const [passingGoReward, setPassingGoReward] = useState<number>(storedPassingGoReward ?? 200);
 
   const [updatePassingGoRewardModalValue, setUpdatePassingGoRewardModalValue] = useState<number>(
     passingGoReward
@@ -37,12 +37,12 @@ const PlayerPassedGo: React.FC<IPlayerPassedGoProps> = ({ players, onSubmit }) =
     () => (
       <Modal show={true} onHide={hideUpdatePassingGoRewardModal} size="lg" centered>
         <Modal.Header closeButton>
-          <Modal.Title>Update Player Passing Go Reward</Modal.Title>
+          <Modal.Title>Modificar monto recompensa pasar por Inicio</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <InputGroup>
             <InputGroup.Prepend>
-              <InputGroup.Text>Amount</InputGroup.Text>
+              <InputGroup.Text>Monto</InputGroup.Text>
             </InputGroup.Prepend>
             <NumberFormat
               allowNegative={false}
@@ -65,7 +65,7 @@ const PlayerPassedGo: React.FC<IPlayerPassedGoProps> = ({ players, onSubmit }) =
               }}
               className="remove-left-border-radius"
             >
-              Set
+              Guardar
             </Button>
           </InputGroup>
           <Form.Text style={{ color: "var(--danger)" }}>{submitError}</Form.Text>
@@ -86,7 +86,7 @@ const PlayerPassedGo: React.FC<IPlayerPassedGoProps> = ({ players, onSubmit }) =
       setSelectedPlayer(null);
       setSubmitError(null);
     } else {
-      setSubmitError("No player selected");
+      setSubmitError("Seleccione el Jugador");
     }
   };
 

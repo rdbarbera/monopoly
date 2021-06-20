@@ -48,13 +48,13 @@ const useGameHandler = (): {
                 {player.name}: {formatCurrency(player.balance)}
               </li>
             ))}
-            //<li>Free Parking: {formatCurrency(gameState.freeParkingBalance)}</li>
           </ul>
           <small>(Provided just in the case you need to re-create the game)</small>
         </>
       )
     });
   };
+  //            <li>Free Parking: {formatCurrency(gameState.freeParkingBalance)}</li>
 
   // Create / destroy the game handler when new new auth is provided
   const initializeGame = ({ gameId, userToken, playerId }: IGameHandlerAuthInfo) => {

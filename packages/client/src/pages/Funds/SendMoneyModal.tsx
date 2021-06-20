@@ -69,7 +69,7 @@ const SendMoneyModal: React.FC<ISendMoneyModalProps> = ({
         <MonopolyAmountInput amount={amount} setAmount={setAmount} />
 
         <Button block variant="success" className="mt-1" onClick={submit}>
-          Send
+          Enviar
         </Button>
 
         <Form.Text style={{ color: "var(--danger)" }}>{submitError}</Form.Text>
