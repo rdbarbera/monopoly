@@ -30,7 +30,7 @@ jobs:
           REACT_APP_API_ROOT: https://monopoly-vale.herokuapp.com
           REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID: 2222
           REACT_APP_API_UNREACHABLE_ERROR_MESSAGE: "Unable to communicate with server.\nSince this is publicly hosted, we may have run out of minutes on the server.\nThis should be running again next month when the time is reset."
-          CI: true
+          CI: false
           GENERATE_SOURCEMAP: false
 
       - name: Deploy
