@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8182cfb8.chunk.css",
+    "main.js": "/static/js/main.59ee0dfa.chunk.js",
+    "runtime-main.js": "/static/js/runtime-main.50001124.js",
+    "static/js/2.89cfb8bb.chunk.js": "/static/js/2.89cfb8bb.chunk.js",
+    "index.html": "/index.html",
+    "static/js/2.89cfb8bb.chunk.js.LICENSE.txt": "/static/js/2.89cfb8bb.chunk.js.LICENSE.txt",
+    "static/media/bank.ff09f882.svg": "/static/media/bank.ff09f882.svg",
+    "static/media/banner.8cd808a3.png": "/static/media/banner.8cd808a3.png",
+    "static/media/funds.c731d0be.svg": "/static/media/funds.c731d0be.svg",
+    "static/media/help.859417f1.svg": "/static/media/help.859417f1.svg",
+    "static/media/list.2624e429.svg": "/static/media/list.2624e429.svg",
+    "static/media/pages.b841b5b8.png": "/static/media/pages.b841b5b8.png",
+    "static/media/screenshot-1.e1dcb53b.png": "/static/media/screenshot-1.e1dcb53b.png",
+    "static/media/screenshot-2.fec870d9.png": "/static/media/screenshot-2.fec870d9.png",
+    "static/media/screenshot-3.ba9fcae7.png": "/static/media/screenshot-3.ba9fcae7.png",
+    "static/media/screenshot-4.e609185b.png": "/static/media/screenshot-4.e609185b.png",
+    "static/media/settings.ffa03655.svg": "/static/media/settings.ffa03655.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.50001124.js",
+    "static/js/2.89cfb8bb.chunk.js",
+    "static/css/main.8182cfb8.chunk.css",
+    "static/js/main.59ee0dfa.chunk.js"
+  ]
+}
