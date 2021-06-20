@@ -92,7 +92,7 @@ const Home: React.FC<IHomeProps> = ({ onGameSetup }) => {
               ))}
           </div>
         ) : (
-            <div>You have no active games</div>
+            <div>No tienes juegos activos, inicia uno nuevo o unete</div>
           )}
       </div>
 
