@@ -26,9 +26,9 @@ const PlayerPassedGo: React.FC<IPlayerPassedGoProps> = ({ players, onSubmit }) =
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [storedPassingGoReward, setStoredPassingGoReward] = useLocalStorage<number>(
     passingGoRewardValueLocalStorageKey,
-    200
+    2000
   );
-  const [passingGoReward, setPassingGoReward] = useState<number>(storedPassingGoReward ?? 200);
+  const [passingGoReward, setPassingGoReward] = useState<number>(storedPassingGoReward ?? 2000);
 
   const [updatePassingGoRewardModalValue, setUpdatePassingGoRewardModalValue] = useState<number>(
     passingGoReward
