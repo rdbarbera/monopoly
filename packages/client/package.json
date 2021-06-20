@@ -1,5 +1,6 @@
 {
   "name": "client2",
+  "homepage": "https://rdbarbera.github.io/monopoly/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
