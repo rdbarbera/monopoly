@@ -1,3 +1,4 @@
+
 <div style="text-align: center">
     <a href="https://monopoly-money.nitratine.net/"><img src="./packages/client/src/img/banner.png" alt="Monopoly Money Banner" style="background: white;"></a>
 </div>
