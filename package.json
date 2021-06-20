@@ -11,13 +11,6 @@
     "client:dev": "cd packages/client && npm start",
     "server:dev": "cd packages/server && npm run dev"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/brentvollebregt/monopoly-money.git"
-  },
-  "bugs": {
-    "url": "https://github.com/brentvollebregt/monopoly-money/issues"
-  },
   "devDependencies": {
     "tslint": "^5.20.1"
   },
