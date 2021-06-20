@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/monopoly/static/css/main.8182cfb8.chunk.css",
-    "main.js": "/monopoly/static/js/main.d2d1b755.chunk.js",
+    "main.js": "/monopoly/static/js/main.86cb6945.chunk.js",
     "runtime-main.js": "/monopoly/static/js/runtime-main.6b839980.js",
     "static/js/2.89cfb8bb.chunk.js": "/monopoly/static/js/2.89cfb8bb.chunk.js",
     "index.html": "/monopoly/index.html",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.6b839980.js",
     "static/js/2.89cfb8bb.chunk.js",
     "static/css/main.8182cfb8.chunk.css",
-    "static/js/main.d2d1b755.chunk.js"
+    "static/js/main.86cb6945.chunk.js"
   ]
 }
